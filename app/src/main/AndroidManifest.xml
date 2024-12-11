@@ -23,6 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SwApp">
+        </activity>
+        <activity
+            android:name=".SearchInternetActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SwApp">
+        </activity>
+        <activity
+            android:name=".SearchPhoneActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SwApp">
+        </activity>
+        <activity
+            android:name=".WriterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SwApp">
+        </activity>
     </application>
 
 </manifest>
