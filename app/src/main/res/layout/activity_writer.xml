@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상단 툴바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 뒤로 가기 버튼 -->
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="뒤로 가기"
+            android:background="?attr/selectableItemBackground"/>
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저자 소개"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- 저자 소개 내용 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/text_author_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본 app의 저자인 홍길동은\n2000년에 서울 강남구 대치동에서 출생하였으며\n\n.......................................................\n.......................................................\n.......................................................\n\n감사합니다."
+            android:textSize="16sp"/>
+    </ScrollView>
 
 </LinearLayout>

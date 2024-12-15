@@ -11,12 +11,14 @@
         android:id="@+id/contact_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="강효원"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/contact_phone"
         android:layout_width="wrap_content"
+        android:text="010-9608-4690"
         android:layout_height="wrap_content"
         android:textSize="16sp"/>
 </LinearLayout>
